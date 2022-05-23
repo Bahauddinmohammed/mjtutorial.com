@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/loopslider.min.css">
+  <link href="css/ziehharmonika.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="logo">
+        <a href="#" class="logo">
+          <span class="logo-icon"><img src="images/icons/teaching.png" alt="icon"></span>
+          <span class="logo-name">MJ Tutorial</span>
+        </a>
+      </div>
+      <div class="navigation">
+        <input type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>
+
+        <ul class="menu">
+
+          <li><a href="#home" class="navigation_link">Home</a></li>
+          <li><a href="#about" class="navigation_link">Courses</a></li>
+          
+          <li><a href="#contact" class="navigation_link">Contact</a></li>
+      
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-page page-section" id="home">
+
+
+   
+      <a href="#about"><i class="fa-solid fa-angles-down" style="color:orange;font-size:xx-large;position:absolute;
+      bottom: 5vh;
+         left: 50%; animation: bounce 2s infinite;"></i></a>
+    </div>
+  </div>
+  <div class="clear">
+  </div>
+  </div>
+  <!-- about section -->
+  <div class="container">
+    <div class="abt-section " id="about">
+      <h1 id="abt" class="page-section">Courses</h1>
+      <div class="div1 ">
+        <img src="images/pencil.jpg" alt="" width="200px">
+      </div>
+      <div class="div2">
+       
+
+          <p class="abt-para" class="animate__animated animate__slideInUp animate__delay-0.8s"><span class="abt-head"style="font-weight:bold;font-size:20px;">Classes for 1<sup>st</sup> to 6<sub>th</sub> standard </span><span
+              id="md-logo"><br>
+             <br>“Learning never exhausts the mind.” “For the things we have to learn before we can do them, we learn by doing them.” “Learning is not attained by chance, it must be sought for with ardor and attended to with diligence.” “The beautiful thing about learning is that nobody can take it away from you.” <span style="color:#ff5722;font-weight:bold;"></p>
+          <h3 id="hob-head" style="color:blue">All Subjects:</h3>
+          <div class="details">
+            <div id="details">
+              <ul id="list1" type="disc">
+                <li><span style="font-size: medium; font-weight: bold;">Hindi</li>
+                  <li><span style="font-size: medium; font-weight: bold;">Telugu</li>
+                    <li><span style="font-size: medium; font-weight: bold;">English</li>
+                      
+               
+              </ul>
+              <ul id="list2">
+                <li><span style="font-size: medium; font-weight: bold;">Mathematics</li>
+                  <li><span style="font-size: medium; font-weight: bold;">Science</li>
+                    <li><span style="font-size: medium; font-weight: bold;">Social</li>
+              </ul>
+              <a href="#"><button class="button" type="button"
+                  onclick="alert('Hello! Contact@08455-278182')">Click Here</a></button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="clear">
+    </div>
+  </div>
+
+ <!-- slider -->
+
+ <div class="container">
+  <div id="loop-slider" data-autoplay="true" data-speed="2000" >
+    <ul id="img-group">
+      <li class="slide" data-img="images/1.jpg"></li>
+      <li class="slide" data-img="images/2.jpg"></li>
+      <li class="slide" data-img="images/3.jpg"></li>
+      <li class="slide" data-img="images/4.jpg"></li>
+      <li class="slide" data-img="images/5.jpg"></li>
+    </ul>
+  </div>
+
+</div>
+<!-- Accordion -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+  crossorigin="anonymous"></script>
+<script src="js/loopslider.min.js"></script>
+
+
+
+
+
+
+  <!-- contact section  -->
+  <div class="container">
+    <h2 id="contact" class="page-section">CONTACT</h2>
+    <div class="contact-section ">
+
+      
+        <h1 id="cont-logo2">CONTACT ME</h1>
+        
+        <div class="form-section">
+
+
+          <form action="https://formspree.io/f/myyolzya" method="POST" name="details">
+
+            <div class="form">
+              <div class="form-group">
+                <label for="firstname">First Name<span class="star">*</span></label>
+                <input type="text" id="lastName" name="fname" required placeholder="enter the first name">
+              </div>
+
+              <div class="form-group">
+                <label for="lastname">Last Name<span class="star">*</span></label>
+                <input type="text" id="lastName" name="lname" required placeholder="enter the last name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Phone<span class="star">*</span></label>
+                <input type="email" id="lastName" name="email" required placeholder="enter your email id">
+              </div>
+              <div class="form-group">
+                <label for="message">Message<span class="star">*</span></label>
+                <textarea name="message" id="message" cols="30" rows="10" required
+                  placeholder="enter the message"></textarea>
+              </div>
+              <button type="submit" value="Click Me" onclick="display();">Submit</button>
+          </form>
+          </fieldset>
+        </div>
+
+
+        <h3 id="form" style="color:#fff;font-size:20px;">Address</h3>
+        <div id="cont-details">
+
+          <ul type="none" id="cont-list1">
+            <li><span style="font-weight: bold;">Phone:  </span><span style="color: #888;">08455278182</span></li>
+            <li><span style="font-weight: bold;">Adress: </span><span id="website" style="color: #888;">Opposite New Bus stand, Street:Veerbadranagar, Near Rukmini Theater<br>Sangareddy, Telangana 502001.</a></span></li>
+          </ul>
+          <ul type="none" id="cont-list2">
+            
+            <li><span style="font-weight: bold;">Map: </span><span style=""><span id="map"><a
+                    href="https://goo.gl/maps/k63QaPQL8eNDSGKB6" style="text-decoration:none;color: #016ca7;">via Google
+                    Maps</a></span></li>
+          </ul>
+         
+          <div class="clear">
+          </div>
+
+        </div>
+    </div>
+    <h2>
+      <hr>
+    </h2>
+    <p class="footer" style="color:grey;text-align:center;">Copyright © MJ Tutorial</p>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript, jquery section starts from here. -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script>
+  function display() {
+    var x = document.details.fname.value;
+    var y = document.details.lname.value;
+    var z = document.details.email.value;
+    var A = document.details.message.value;
+
+
+    alert("FIRST NAME:" + x + "     " + "LAST NAME:" + y + "     " + "EMAIL:" + z + "     " + "MESSAGE:" + z);
+  }
+</script>
+
+<script>
+  // ——————————————————————————————————————————————————
+  // TextScramble
+  // ——————————————————————————————————————————————————
+
+  class TextScramble {
+    constructor(el) {
+      this.el = el
+      this.chars = '!<>-_\\/[]{}—=+*^?#________'
+      this.update = this.update.bind(this)
+    }
+    setText(newText) {
+      const oldText = this.el.innerText
+      const length = Math.max(oldText.length, newText.length)
+      const promise = new Promise((resolve) => this.resolve = resolve)
+      this.queue = []
+      for (let i = 0; i < length; i++) {
+        const from = oldText[i] || ''
+        const to = newText[i] || ''
+        const start = Math.floor(Math.random() * 40)
+        const end = start + Math.floor(Math.random() * 40)
+        this.queue.push({ from, to, start, end })
+      }
+      cancelAnimationFrame(this.frameRequest)
+      this.frame = 0
+      this.update()
+      return promise
+    }
+    update() {
+      let output = ''
+      let complete = 0
+      for (let i = 0, n = this.queue.length; i < n; i++) {
+        let { from, to, start, end, char } = this.queue[i]
+        if (this.frame >= end) {
+          complete++
+          output += to
+        } else if (this.frame >= start) {
+          if (!char || Math.random() < 0.28) {
+            char = this.randomChar()
+            this.queue[i].char = char
+          }
+          output += `<span class="dud">${char}</span>`
+        } else {
+          output += from
+        }
+      }
+      this.el.innerHTML = output
+      if (complete === this.queue.length) {
+        this.resolve()
+      } else {
+        this.frameRequest = requestAnimationFrame(this.update)
+        this.frame++
+      }
+    }
+    randomChar() {
+      return this.chars[Math.floor(Math.random() * this.chars.length)]
+    }
+  }
+
+  // ——————————————————————————————————————————————————
+  // Example
+  // ——————————————————————————————————————————————————
+
+  const phrases = [
+    'Front-End Developer.',
+    'Web Developer.',
+    'Freelancer',
+    'Software Engineer',
+
+
+  ]
+
+  const el = document.querySelector('.text')
+  const fx = new TextScramble(el)
+
+  let counter = 0
+  const next = () => {
+    fx.setText(phrases[counter]).then(() => {
+      setTimeout(next, 800)
+    })
+    counter = (counter + 1) % phrases.length
+  }
+
+  next()
+</script>
+<script>
+  $(document).ready(function () {
+    //jquery for apply active color for menus on scroll//
+
+    $('a[href*=#]').bind('click', function (e) {
+      e.preventDefault(); // prevent hard jump, the default behavior
+
+      var target = $(this).attr("href"); // Set the target as variable
+
+      // perform animated scrolling by getting top-position of target-element and set it as scroll target
+      $('html, body').stop().animate({
+        scrollTop: $(target).offset().top
+      }, 600, function () {
+        location.hash = target; //attach the hash (#jumptarget) to the pageurl
+      });
+
+      return false;
+    });
+  });
+
+  $(window).scroll(function () {
+    var scrollDistance = $(window).scrollTop();
+
+    // Show/hide menu on scroll
+    //if (scrollDistance >= 850) {
+    //		$('nav').fadeIn("fast");
+    //} else {
+    //		$('nav').fadeOut("fast");
+    //}
+
+    // Assign active class to nav links while scolling
+    $('.page-section').each(function (i) {
+      if ($(this).position().top <= scrollDistance) {
+        $('.navigation a.active').removeClass('active');
+        $('.navigation a').eq(i).addClass('active');
+      }
+    });
+  }).scroll();
+
+
+
+</script>
+</body>
+
+
+
+</html>
