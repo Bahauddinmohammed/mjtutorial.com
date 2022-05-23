@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>MJ Tutorial</title>
-  <link rel="shortcut icon" type="image" href="images/icons/teaching.png">
+  <link rel="shortcut icon" type="image" href="images/icons/teaching.png"
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/loopslider.min.css">
   <link href="css/ziehharmonika.css" rel="stylesheet" type="text/css">
